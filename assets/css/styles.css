@@ -2,19 +2,32 @@ body{
     text-align: center;    
     margin: 0px;
     padding: 0px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-font-smoothing: antialiased;
     -moz-osx-font-smoothing: antialiased;
+    background-color: #000;
+    color: #fff;
+}
 
+#top-bar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #000;
+    z-index: 10;
+    padding: 10px 20px;
+    box-sizing: border-box;
 }
 
 #header{
-    height: 130px;
+    height: 100vh;
     width: 100%;
-    background: white;
-    border-bottom: 1px solid #ccc;
-    border-top: 5px solid #356288;
+    position: relative;
+    background: none;
+    border-bottom: none;
+    border-top: none;
 }
 
 .center{
@@ -28,55 +41,74 @@ body{
 }
 
 #photo{
-    width: 30%;
-    font-size: 30px;
-    float: left;
-    margin-top: 35px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 #photo img{
-    display: block;
-    float: left;
-    height: 100px;
-    margin-top: -18px;
-    margin-right: 5px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(100%);
 }
 
-#name{
-    display: block;
-    margin: 10px;
+#site-name{
     float: left;
-    color: #37375e;
+    color: #fff;
+    font-size: 48px;
+    font-weight: bold;
+    cursor: pointer;
+    background: transparent;
+    padding: 0;
+    border-radius: 0;
+}
+
+#site-name h1{
+    margin: 0;
+    padding: 0;
+}
+
+.content-section {
+    padding-top: 100px;
+    background: #333;
+    min-height: 100vh;
 }
 
 #menu{
-    width: 70%;
     float: right;
     font-size: 18px;
+    background: transparent;
+    padding: 0;
+    border-radius: 0;
 }
 
 #menu ul{
-    line-height: 85px;
-    width: 60%;
-    float: right;
+    line-height: normal;
+    width: auto;
+    float: none;
+    margin: 0;
+    padding: 0;
 }
 
 #menu ul li{
     display: inline-block;
     list-style: none;
-    height: 46px;
+    height: auto;
     margin-left: 15px;
     margin-right: 10px;
 }
 
 #menu ul a{
     text-decoration: none;
-    color: #37375e;
+    color: #fff;
     transition: 300ms all;
 }
 
 #menu ul a:hover{
-    color: #356288;
+    color: #ccc;
   
 }
 
@@ -84,10 +116,9 @@ body{
     width: 100%;
     height: 350px;
     /*line-height: 320px;*/
-    color: rgb(236, 232, 232);
-    text-shadow: 0px 0px 5px #444;
-    background: rgb(254,17,0);
-    background: linear-gradient(90deg, rgba(254,17,0,1) 4%, rgba(53,98,136,1) 94%);
+    color: #fff;
+    text-shadow: 0px 0px 5px #000;
+    background: linear-gradient(90deg, #000 0%, #333 100%);
 }
 
 #slider h1 {
@@ -99,8 +130,8 @@ body{
 
 .btn-white {
     display: block;
-    background: white;
-    color: #37375e;
+    background: #000;
+    color: #fff;
     padding: 10px;
     width: 95px;
     height: 32px;
@@ -110,15 +141,15 @@ body{
     text-shadow: none;
     text-decoration: none;
     line-height: 35px;
-    box-shadow: 0px 0px 5px #444;
+    box-shadow: 0px 0px 5px #333;
     margin-top: 40px;
     border-radius: 4px;
     transition: 300ms all;
 }
 
 .btn-white:hover {
-    background: #aacfdd;
-    color: white;
+    background: #fff;
+    color: #000;
 }
 
 #slider.slider-small{
@@ -158,7 +189,7 @@ body{
 
 .btn{
     display: block;
-    background: #37375e;
+    background: #000;
     color: white;
     padding: 15px;
     font-weight: bold;
@@ -172,11 +203,11 @@ body{
 }
 
 .btn-success{
-    background: #356288;
+    background: #333;
 }
 
 .btn-success:hover{
-    background: #37375e;
+    background: #000;
 }
 
 .mid-form{
@@ -197,7 +228,9 @@ input[type='text'],
 textarea{
     width: 100%;
     min-height: 30px;
-    border: 1px solid #aacfdd;
+    border: 1px solid #666;
+    background: #333;
+    color: #fff;
     padding: 3px;
     margin-bottom: 5px;
     transition: 300ms all;
@@ -205,7 +238,7 @@ textarea{
 
 input[type='text']:focus,
 textarea:focus{
-    box-shadow: 0px 0px 5px #aacfdd inset;
+    box-shadow: 0px 0px 5px #666 inset;
 }
 
 textarea{
@@ -218,23 +251,23 @@ textarea{
 }
 
 #footer{
-    background: #aacfdd;
+    background: #000;
     width: 100%;
     height: 70px;
     line-height: 70px;
-    color: #356288;
+    color: #fff;
 }
 
 .subheader{
      font-size: 40px;
-     border-bottom: 2px solid #aacfdd;
-     color: #356288;
+     border-bottom: 2px solid #fff;
+     color: #fff;
      padding: 20px;
 }
 
 .title{
     font-size: 25px;
-    color: #356288;
+    color: #fff;
     padding: 5px;
 }
 
@@ -247,7 +280,7 @@ textarea{
 
 .li-edu a{
     text-decoration: none;
-    color: #356288;
+    color: #fff;
     transition: 300ms all;
 }
 
@@ -284,7 +317,7 @@ textarea{
 .article-item .date{
     display: block;
     width: 100%;
-    color: #356288;
+    color: #ccc;
 }
 
 .image-wrap img{
@@ -324,19 +357,19 @@ textarea{
 }
 
 .sidebar-item{
-    background: #f7f7f7;
+    background: #333;
     padding: 40px;
     margin-top: 50px;
     margin-right: 40px;
 }
 
 .sidebar-item h3{
-    color: #356288;
+    color: #fff;
     font-size: 25px;
     margin: 0px;
     padding-bottom: 10px;
     margin-bottom: 10px;
-    border-bottom: 3px solid #aacfdd;
+    border-bottom: 3px solid #fff;
 }
 
 .sidebar-item p{
