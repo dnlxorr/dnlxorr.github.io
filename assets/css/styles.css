@@ -17,8 +17,12 @@ body{
     width: 100%;
     background: #000;
     z-index: 10;
-    padding: 10px 20px;
+    padding: 8px 20px;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    min-height: 62px;
 }
 
 #header{
@@ -55,15 +59,33 @@ body{
     filter: grayscale(100%);
 }
 
+#top-bar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #000;
+    z-index: 10;
+    padding: 6px 18px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    min-height: 45px;
+}
+
 #site-name{
-    float: left;
     color: #fff;
-    font-size: 48px;
+    font-size: 26px;
     font-weight: bold;
     cursor: pointer;
     background: transparent;
     padding: 0;
     border-radius: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 #site-name h1{
@@ -78,17 +100,22 @@ body{
 }
 
 #menu{
-    float: right;
+    width: 100%;
     font-size: 18px;
     background: transparent;
     padding: 0;
     border-radius: 0;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: auto;
 }
 
 #menu ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     line-height: normal;
     width: auto;
-    float: none;
     margin: 0;
     padding: 0;
 }
@@ -259,23 +286,47 @@ textarea{
 }
 
 .subheader{
-     font-size: 40px;
+     font-size: 32px;
+     margin: 0;
      border-bottom: 2px solid #fff;
      color: #fff;
      padding: 20px;
 }
 
 .title{
-    font-size: 25px;
+    font-size: 32px;
     color: #fff;
     padding: 5px;
 }
 
-.li-edu{
-    display: inline-block;
+.sidebar-item h3{
+    font-size: 32px;
+}
+
+.content-grid .center {
+    width: 100%;
+    margin: 0;
+}
+
+.li-edu {
+    display: block;
+    width: 100%;
+    text-align: left;
     list-style: none;
-    padding: auto;
-    height: 60px;
+    margin: 0 0 12px 0;
+    padding: 0;
+}
+
+#education {
+    width: 100%;
+}
+
+#education ul {
+    width: 100%;
+}
+
+.sidebar-item p {
+    text-align: left;
 }
 
 .li-edu a{
@@ -284,34 +335,72 @@ textarea{
     transition: 300ms all;
 }
 
-.list1{
-    align-items: center;
-    font-size: large;
-    height: 60px;
-    margin-left: 300px;
-    margin-right: 300px;
+#nav-blog a{
+    color: #aacfdd;
+    text-decoration: underline;
+    transition: 200ms all;
 }
 
-.list2{
-    align-items: center;
+#nav-blog a:hover{
+    color: #fff;
+}
+
+.list1,
+.list2 {
+    align-items: flex-start;
     font-size: large;
-    height: 60px;
-    margin-left: 300px;
-    margin-right: 300px;
+    margin: 0;
+    max-width: none;
+    padding: 0;
+    width: 100%;
+}
+
+.content-grid {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.education-column {
+    flex: 0 1 70%;
+}
+
+#sidebar{
+    flex: 0 1 30%;
+    width: auto;
+    float: none;
+    padding: 0;
+    margin: 0;
+}
+
+@media (max-width: 900px) {
+    .content-grid {
+        flex-direction: column;
+    }
+
+    #sidebar {
+        width: 100%;
+    }
 }
 
 
 #nametitle{
     display: block;
-    float: left;
+    float: none;
+    width: 100%;
 }
 
 .article-item{
     display: block;
     width: 100%;
     padding-bottom: 20px;
-    padding-top: 20px;
-    text-align: center;
+    padding-top: 0;
+    text-align: left;
 }
 
 .article-item .date{
@@ -351,23 +440,25 @@ textarea{
 }
 
 
+/* Sidebar column in the two-column layout */
 #sidebar{
-    width: 30%;
-    float: right;
+    flex: 0 1 30%;
+    width: auto;
+    padding-left: 20px;
 }
 
 .sidebar-item{
     background: #333;
-    padding: 40px;
-    margin-top: 50px;
-    margin-right: 40px;
+    padding: 20px;
+    margin-top: 0;
+    margin-right: 0;
 }
 
 .sidebar-item h3{
     color: #fff;
     font-size: 25px;
     margin: 0px;
-    padding-bottom: 10px;
+    padding: 20px 0 10px 0;
     margin-bottom: 10px;
     border-bottom: 3px solid #fff;
 }
