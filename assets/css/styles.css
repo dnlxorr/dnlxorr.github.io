@@ -99,6 +99,76 @@ body{
     min-height: 100vh;
 }
 
+.presentations-grid {
+    display: flex;
+    gap: 40px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.code-column,
+.physics-column {
+    flex: 1;
+    background: #444;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.code-column h2,
+.physics-column h2 {
+    color: #fff;
+    font-size: 28px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 10px;
+}
+
+.subsection {
+    margin-bottom: 30px;
+}
+
+.subsection h3 {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.presentation-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #555;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.presentation-item .date {
+    font-weight: bold;
+    min-width: 120px;
+}
+
+.presentation-item .title {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.presentation-item .event,
+.presentation-item .location {
+    min-width: 150px;
+    text-align: right;
+}
+
+@media (max-width: 768px) {
+    .presentations-grid {
+        flex-direction: column;
+    }
+}
+
 #menu{
     width: 100%;
     font-size: 18px;
@@ -547,5 +617,77 @@ textarea{
         width: 60%;
         margin: 0px auto;
         margin-bottom: 50px;
+    }
+}
+
+/* Moments styles */
+.moments-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.moment-item {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    padding: 15px;
+    gap: 15px;
+}
+
+.moment-item img {
+    height: 288px;
+    width: auto;
+    max-width: 288px;
+    object-fit: contain;
+    background: rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+    flex-shrink: 0;
+}
+
+.moment-caption {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: left;
+    flex: 1;
+}
+
+.moment-caption .date,
+.moment-caption .place,
+.moment-caption .description {
+    display: block;
+    color: #fff;
+}
+
+.moment-caption .date {
+    font-weight: bold;
+    color: #ccc;
+    font-size: 0.9em;
+}
+
+.moment-caption .place {
+    font-weight: bold;
+    color: #fff;
+}
+
+.moment-caption .description {
+    color: #ddd;
+    font-size: 0.95em;
+    line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+    .moment-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .moment-caption {
+        text-align: center;
     }
 }

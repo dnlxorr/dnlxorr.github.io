@@ -1,288 +1,513 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8"/>
-        <title>Daniel Torres</title>
-        <link rel="stylesheet" type="text/css" href="assets/css/styles.css"/>
 
-    </head>
+<head>
+    <meta charset="utf-8" />
+    <title>Daniel Torres</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
 
-    <body>
-        <div id="top-bar">
-            <div id="site-name" onclick="showHome()">
-                <h1>Daniel Torres</h1>
-            </div>
+</head>
 
-            <nav id="menu">
-                <ul>
-                    <li>
-                        <a href="#" onclick="showSection('profile')">Profile</a>
-                    </li>
-                    <li>
-                        <a href="#" onclick="showSection('skills')">Skills</a>
-                    </li>
-                    <li>
-                        <a href="#" onclick="showSection('experience')">Experience</a>
-                    </li>
-                    <li>
-                        <a href="#" onclick="showSection('contact')">Contact Me</a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="clearfix"></div>
+<body>
+    <div id="top-bar">
+        <div id="site-name" onclick="showHome()">
+            <h1>Daniel Torres</h1>
         </div>
 
-        <header id="header">
-            <div class="center">
-                <div id="photo">
-                    <img src="assets/images/daniel2.jpeg" class="cv-photo" alt="Photo"/>
-                </div>
+        <nav id="menu">
+            <ul>
+                <li>
+                    <a href="#" onclick="showSection('profile')">Profile</a>
+                </li>
+                <li>
+                    <a href="#" onclick="showSection('presentations')">Presentations</a>
+                </li>
+                <li>
+                    <a href="#" onclick="showSection('moments')">Moments</a>
+                </li>
+                <li>
+                    <a href="#" onclick="showSection('experience')">Experience</a>
+                </li>
+                <li>
+                    <a href="#" onclick="showSection('contact')">Contact Me</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="clearfix"></div>
+    </div>
 
-                <!--LIMPIAR FLOTADOS-->
-                <div class="clearfix"></div>
-            </div>    
-        </header>
-
-        <div id="profile" class="content-section" style="display: none;">
-            <div id="slider" class="slider-big">
-                <h1>Physicist and Software Developer</h1>
-                <a href="https://github.com/dnlxorr" class="btn-white">Git-Hub</a>
+    <header id="header">
+        <div class="center">
+            <div id="photo">
+                <img src="assets/images/daniel2.jpeg" class="cv-photo" alt="Photo" />
             </div>
 
-            <div class="center">
-                <section id="content">
-                    <h2 class="subheader">Profile</h2>
-                    <p id="profile-text" class="profile">Physicist and self-taught software developer. Along all of my formal education, I've always found the way to dedicate an important part of my time to the development of software both, for scientific and nonscientific purposes. I have 7+ years of experience in python and c++ programming computer simulations of physical systems. I am fully capable of running simulations of complex systems such as those found in quantum computing. My most recent experience accounts for 5 years as Android developer. Nowadays, I'm fully immersed in multiplatform development to improve academic processes for teachers and students at the university and school levels through automation and data management.</p>
-                </section>
-            </div>
-
+            <!--LIMPIAR FLOTADOS-->
             <div class="clearfix"></div>
+        </div>
+    </header>
 
-            <div class="content-grid">
-                <div class="education-column">
-                    <div id="articles">
-                       
-                        <article class="article-item">
-                            <div class="center">
-                                <h2 class="subheader">Education</h2>
-                            </div>
-                            <section id="education">
+    <div id="profile" class="content-section" style="display: none;">
+        <div id="slider" class="slider-big">
+            <h1>Physicist and Software Developer</h1>
+            <a href="https://github.com/dnlxorr" class="btn-white">Git-Hub</a>
+        </div>
+
+        <div class="center">
+            <section id="content">
+                <h2 class="subheader">Profile</h2>
+                <p id="profile-text" class="profile">Physicist and self-taught software developer. Along all of my
+                    formal education, I've always found the way to dedicate an important part of my time to the
+                    development of software both, for scientific and nonscientific purposes. I have 7+ years of
+                    experience in python and c++ programming computer simulations of physical systems. I am fully
+                    capable of running simulations of complex systems such as those found in quantum computing. My most
+                    recent experience accounts for 5 years as Android developer. Nowadays, I'm fully immersed in
+                    multiplatform development to improve academic processes for teachers and students at the university
+                    and school levels through automation and data management.</p>
+            </section>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <div class="content-grid">
+            <div class="education-column">
+                <div id="articles">
+
+                    <article class="article-item">
+                        <div class="center">
+                            <h2 class="subheader">Education</h2>
+                        </div>
+                        <section id="education">
                             <div id="nametitle">
                                 <h3 class="title">PH.D., Physics</h3>
                                 <ul class="li-edu list1">
                                     <li>
-                                        First-principles studies of electronic transport phenomena in chiral non-collinear antiferromagnets and chiral space group crystals. Novel materials with topological properties with several applications to quantum computing, such as fault-tolerant quantum computing, antiferromagnetic storage devices, and quantum transducers.
+                                        First-principles studies of electronic transport phenomena in chiral
+                                        non-collinear antiferromagnets and chiral space group crystals. Novel materials
+                                        with topological properties with several applications to quantum computing, such
+                                        as fault-tolerant quantum computing, antiferromagnetic storage devices, and
+                                        quantum transducers.
                                     </li>
-                                    <li><a href="https://uis.edu.co/es/">Universidad Industrial de Santander</a></li> 
+                                    <li><a href="https://uis.edu.co/es/">Universidad Industrial de Santander</a></li>
                                     <li>2018 - 2023 </li>
                                     <li>Santander, Colombia</li>
-                                </ul>          
+                                </ul>
                             </div>
-                
+
                             <div id="nametitle">
                                 <h3 class="title">MSc., Geophysics</h3>
                                 <ul class="li-edu list2">
-                                    <li>Mathematical modeling of seismic traces and filtering with fractional convolution and Python.</li>
-                                    <li><a href="https://uis.edu.co/es/">Universidad Industrial de Santander</a></li> 
+                                    <li>Mathematical modeling of seismic traces and filtering with fractional
+                                        convolution and Python.</li>
+                                    <li><a href="https://uis.edu.co/es/">Universidad Industrial de Santander</a></li>
                                     <li>2014 - 2017 </li>
                                     <li>Santander, Colombia</li>
-                                </ul>          
+                                </ul>
                             </div>
-                
+
                             <div id="nametitle">
                                 <h3 class="title">BSc., Physics</h3>
                                 <ul class="li-edu list2">
                                     <li>Particle accelerator dynamics and radiation simulations in C++.</li>
-                                    <li><a href="https://uis.edu.co/es/">Universidad Industrial de Santander</a></li> 
+                                    <li><a href="https://uis.edu.co/es/">Universidad Industrial de Santander</a></li>
                                     <li>2004 - 2013</li>
                                     <li>Santander, Colombia</li>
-                                </ul>          
+                                </ul>
                             </div>
-                        </article>
+                    </article>
+                </div>
+            </div>
+
+            <aside id="sidebar">
+                <div id="nav-blog" class="sidebar-item">
+                    <h3>Research</h3>
+                    <p id="cita">Ardila-Gutierrez C. E., Torres-Amaris D., Gonzalez-Hernandez Rafael, Romero Aldo H. and
+                        Garcia-Castro A. C. <strong>Chiral symmetry and magnetism in a three-dimensional kagome lattice:
+                            RPt2B prototype crystals (R=La and Nd).</strong> Phys. Rev. B 112, 035109 (2025).
+                        <br>
+                        <a href="https://journals.aps.org/prb/abstract/10.1103/w5dn-z87b">doi: /10.1103/w5dn-z87b.</a>
+                    </p>
+
+                    <hr>
+                    <p id="cita">D. Torres-Amaris <i>et al</i>. <strong>Hall conductivity control in Mn3NiN
+                            antiperovskite by epitaxial strain along the kagome plane.</strong> Phys. Rev. B 106, 195113
+                        (2022).
+                        <br>
+                        <a href="https://doi.org/10.1103/PhysRevB.106.195113">doi: 10.1103/PhysRevB.106.195113.</a>
+                    </p>
+
+                    <hr>
+
+                    <p id="cita">R. Torres D. Torres and Z. Lizarazo <strong>"Theory of prediction, interpolation, and
+                            filtering of α-stationary random signals".</strong> Elsevier, Signal Processing. (2018).
+                        <br>
+                        <a href="https://doi.org/10.1016/j.sigpro.2018.01.020">doi: 10.1016/j.sigpro.2018.01.020</a>
+                    </p>
+
+                </div>
+            </aside>
+        </div>
+        </section>
+
+
+
+        <div class="clearfix"></div>
+    </div>
+    </div>
+
+    <div id="presentations" class="content-section" style="display: none;">
+        <div class="slider-small">
+            <h1>Presentations</h1>
+        </div>
+
+        <div class="presentations-grid">
+            <div class="code-column">
+                <h2>Code</h2>
+
+                <div class="subsection">
+                    <h3>Upcoming</h3>
+                    <div class="presentation-item">
+                        <span class="date">March 20, 2026</span> <span class="title">Machine Learning in Python</span>
+                        <span class="event">PyCon Colombia</span> <span class="location">Bogotá, Colombia</span>
+                    </div>
+                    <div class="presentation-item">
+                        <span class="date">April 15, 2026</span> <span class="title">Web Development Best
+                            Practices</span> <span class="event">Tech Meetup</span> <span class="location">Medellín,
+                            Colombia</span>
                     </div>
                 </div>
 
-                <aside id="sidebar">
-                    <div id="nav-blog" class="sidebar-item">
-                        <h3>Research</h3>
-                        <p id="cita">Ardila-Gutierrez C. E., Torres-Amaris D., Gonzalez-Hernandez Rafael, Romero Aldo H. and Garcia-Castro A. C.  <strong>Chiral symmetry and magnetism in a three-dimensional kagome lattice: RPt2B prototype crystals (R=La and Nd).</strong>  Phys. Rev. B 112, 035109 (2025). 
-                        <br>
-                        <a href="https://journals.aps.org/prb/abstract/10.1103/w5dn-z87b">doi: /10.1103/w5dn-z87b.</a></p>
-
-                        <hr>
-                        <p id="cita">D. Torres-Amaris <i>et al</i>.  <strong>Hall conductivity control in Mn3NiN antiperovskite by epitaxial strain along the kagome plane.</strong>  Phys. Rev. B 106, 195113 (2022). 
-                        <br>
-                        <a href="https://doi.org/10.1103/PhysRevB.106.195113">doi: 10.1103/PhysRevB.106.195113.</a></p>
-
-                        <hr>
-                      
-                        <p id="cita">R. Torres D. Torres and Z. Lizarazo <strong>"Theory of prediction, interpolation, and filtering of α-stationary random signals".</strong> Elsevier, Signal Processing. (2018).
-                        <br>
-                        <a href="https://doi.org/10.1016/j.sigpro.2018.01.020">doi: 10.1016/j.sigpro.2018.01.020</a></p> 
-
+                <div class="subsection">
+                    <h3>Past</h3>
+                    <div class="presentation-item">
+                        <span class="date">January 10, 2026</span> <span class="title">Android Development Trends</span>
+                        <span class="event">Google I/O Extended</span> <span class="location">Cali, Colombia</span>
                     </div>
-                </aside>
+                    <div class="presentation-item">
+                        <span class="date">December 5, 2025</span> <span class="title">Data Science with Python</span>
+                        <span class="event">Data Science Conference</span> <span class="location">Barranquilla,
+                            Colombia</span>
+                    </div>
+                </div>
             </div>
-            </section>  
 
-                
+            <div class="physics-column">
+                <h2>Physics</h2>
 
-                <div class="clearfix"></div>
+                <div class="subsection">
+                    <h3>Upcoming</h3>
+                    <div class="presentation-item">
+                        <span class="date">March 25, 2026</span> <span class="title">Quantum Computing
+                            Applications</span> <span class="event">Physics Symposium</span> <span
+                            class="location">Santander, Colombia</span>
+                    </div>
+                    <div class="presentation-item">
+                        <span class="date">May 10, 2026</span> <span class="title">Magnetic Materials Research</span>
+                        <span class="event">International Conference</span> <span class="location">Cartagena,
+                            Colombia</span>
+                    </div>
+                </div>
+
+                <div class="subsection">
+                    <h3>Past</h3>
+                    <div class="presentation-item">
+                        <span class="date">February 15, 2026</span> <span class="title">Antiferromagnetic
+                            Spintronics</span> <span class="event">APS March Meeting</span> <span
+                            class="location">Virtual</span>
+                    </div>
+                    <div class="presentation-item">
+                        <span class="date">November 20, 2025</span> <span class="title">Electronic Transport
+                            Phenomena</span> <span class="event">Latin American Physics Congress</span> <span
+                            class="location">Lima, Peru</span>
+                    </div>
+                </div>
             </div>
         </div>
+    </div>
 
-        <div id="skills" class="content-section" style="display: none;">
-            <div id="slider" class="slider-small">
-                <h1>Technical Skills</h1>
-            </div> 
-            
-            <div class="center">
-                <h2 class="subheader">Overview</h2>
-            </div>
-            <div class="image-wrap">
-                <img src="assets/images/skills.png" alt="photo"/>
-            </div>
-
-            <div class="center">
-                <h2 class="subheader">Programming</h2>
-            </div>
-            <div class="image-barra">
-                <img src="assets/images/programming.png" alt="photo"/>
-            </div>
+    <div id="moments" class="content-section" style="display: none;">
+        <div id="slider" class="slider-small">
+            <h1>Memorable Moments</h1>
         </div>
 
-        <div id="experience" class="content-section" style="display: none;">
-            <div id="slider" class="slider-small">
-                <h1>Experience</h1>
-            </div> 
-            
-            <div class="center">
-                <section id="content">
-                    <div id="articles">
-                        <article class="article-item" id="article-template">
-                            <h1 class="subheader">Android Developer</h1>
-                            <span class="date">
-                               <strong>November 2022 - Present</strong> 
-                            </span>
+        <div class="moments-list">
 
-                            <ul class="experience-li">
-                                <li>
+            <div class="moment-item">
+                <img src="assets/images/wm_last_day.jpg" alt="Moment 10" />
+                <div class="moment-caption">
+                    <span class="date">2026-02-27</span>
+                    <span class="place">Pamplona, Norte de Santander, Colombia</span>
+                    <span class="description">My last day at W&M but not my last day in software.</span>
+                </div>
+            </div>
+
+            <div class="moment-item">
+                <img src="assets/images/2025_year_farewell_up_meeting.jpg" alt="Moment 9" />
+                <div class="moment-caption">
+                    <span class="date">2025-12-22</span>
+                    <span class="place">Pamplona, Norte de Santander, Colombia</span>
+                    <span class="description">Year farewell meeting with my colleagues and friends from Universidad de
+                        Pamplona.</span>
+                </div>
+            </div>
+
+            <div class="moment-item">
+                <img src="assets/images/2025_simposio_internacional_fisica_up.jpg" alt="Moment 8" />
+                <div class="moment-caption">
+                    <span class="date">2025-11-06</span>
+                    <span class="place">Pamplona, Norte de Santander, Colombia</span>
+                    <span class="description">Attending the International Physics Symposium at Universidad de
+                        Pamplona.</span>
+                </div>
+            </div>
+
+            <div class="moment-item">
+                <img src="assets/images/2025_first_term_students_welcom_up.jpg" alt="Moment 7" />
+                <div class="moment-caption">
+                    <span class="date">2025-03-05</span>
+                    <span class="place">Pamplona, Norte de Santander, Colombia</span>
+                    <span class="description">Welcoming Physics students to the first term students at Universidad de
+                        Pamplona.</span>
+                </div>
+            </div>
+
+            <div class="moment-item">
+                <img src="assets/images/ai_agueda_gallardo.jpeg" alt="Moment 6" />
+                <div class="moment-caption">
+                    <span class="date">2024-08-28</span>
+                    <span class="place">Pamplona, Norte de Santander, Colombia</span>
+                    <span class="description">AI Presentation at Colegio Agueda Gallardo.</span>
+                </div>
+            </div>
+
+            <div class="moment-item">
+                <img src="assets/images/cerro_santisimo.jpeg" alt="Moment 5" />
+                <div class="moment-caption">
+                    <span class="date">2024-01-20</span>
+                    <span class="place">Cerro Santisimo, Bucaramanga, Colombia
+                    </span>
+                    <span class="description">W&M - Android Team meeting.</span>
+                </div>
+            </div>
+
+            <div class="moment-item">
+                <img src="assets/images/starting_android_dev.jpeg" alt="Moment 4" />
+                <div class="moment-caption">
+                    <span class="date">2023-07-05</span>
+                    <span class="place">Santa Marta, Magdalena, Colombia
+                    </span>
+                    <span class="description"> At the beginning of my developer journey.</span>
+                </div>
+            </div>
+
+            <div class="moment-item">
+                <img src="assets/images/phd_title.jpeg" alt="Moment 3" />
+                <div class="moment-caption">
+                    <span class="date">2023-12-15</span>
+                    <span class="place">Bucaramanga, Colombia</span>
+                    <span class="description">Celebrating my PhD graduation with my beloved wife, Cinthia, to whom I
+                        dedicate this achievement.</span>
+                </div>
+            </div>
+            <div class="moment-item">
+                <img src="assets/images/graduation_phd.jpeg" alt="Moment 2" />
+                <div class="moment-caption">
+                    <span class="date">2023-12-15</span>
+                    <span class="place">Bucaramanga, Colombia</span>
+                    <span class="description">Receiving my PhD degree from Universidad Industrial de Santander</span>
+                </div>
+            </div>
+            <div class="moment-item">
+                <img src="assets/images/2012_plasma_physics_congress.jpg" alt="Moment 1" />
+                <div class="moment-caption">
+                    <span class="date">2012-06-08</span>
+                    <span class="place">Universidad Pontificia Bolivariana, Bucaramanga, Colombia</span>
+                    <span class="description">A long time ago when I served as organizer for the International Plasma
+                        Physics Congress with some colleagues and friends.</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="experience" class="content-section" style="display: none;">
+        <div id="slider" class="slider-small">
+            <h1>Experience</h1>
+        </div>
+
+        <div class="center">
+            <section id="content">
+                <div id="articles">
+
+                    <article class="article-item" id="article-template">
+                        <h1 class="subheader">Software Developer - Independent, Colombia</h1>
+                        <span class="date">
+                            <strong>August 2021 - Present</strong>
+                        </span>
+
+                        <ul class="experience-li">
+                            <li>
+                                Consultant software developer for businesses and individuals, focused on good practices native and multiplatform applications. 
+                            </li>
+                            <li>
+                                <strong>Projects:</strong> Professor App and Student App.
+                            </li>
+                            <li>
+                                <strong>Tools:</strong> Android Studio, Kotlin, Kotlin Multiplatform, Swift, web sockets, REST, GitLab.
+                            </li>
+                            <li>
+                                Currently leading a team of developers and scientists to create a complete ecosystem of mobile and web tools for the management of academic processes at the university and school levels, including automation and data management. Automating integration & deployment processes, enabling a faster and more reliable production cycle.
+                            </li>
+                        </ul>
+                    </article>
+
+                    <article class="article-item" id="article-template">
+                        <h1 class="subheader">Professor of Physics - Universidad de Pamplona, Norte de Santander, Colombia</h1>
+                        <span class="date">
+                            <strong>August 2024 - Present</strong>
+                        </span>
+
+                        <ul class="experience-li">
+                            <li>
+                                Teaching physics to undergraduate students, focused on the development of critical thinking and problem-solving skills. Leading research projects in the field of condensed matter physics with applications to quantum computing, and supervising undergraduate and graduate students in their research projects.
+                            </li>
+                            <li>
+                                <strong>Projects:</strong> Storage devices in antiferromagnets using spin-orbit torque as the switching mechanism and anomalous Hall conductivity as the measurement tool.
+                            </li>
+                            <li>
+                                <strong>Tools:</strong> Vienna Abinitio Simulation Package (VASP), Quantum ESPRESSO, Wannier90, VASPKIT, p4vasp, VESTA, Python, C++, Rust, Linux, MacOS.
+                            </li>
+                            <li>
+                                Currently leading the development of a new research line in the field of quantum computing, focused on the study of novel materials with topological properties and their applications to quantum computing, such as fault-tolerant quantum computing, antiferromagnetic storage devices, and quantum transducers.
+                            </li>
+                        </ul>
+                    </article>
+
+                    <article class="article-item" id="article-template">
+                        <h1 class="subheader">Android Developer at W&M, Remote, Colombia</h1>
+                        <span class="date">
+                            <strong>November 2022 - February 2026</strong>
+                        </span>
+
+                        <ul class="experience-li">
+                            <li>
                                 Focused on developing Android software for mobility solutions and FinTech, using clean architecture + SOLID principles. New developments, bugfix and code maintaining.
-                                </li>
-                                <li>
-                                <strong>Projects:</strong> Interactive and dynamic forms generator for customer and business data collection, utilities manager for restricted devices such as electronic payment terminals, SDK and terminal migration for FinTech and POS devices applications (Redeban, Colombia).
-                                </li>
-                                <li>
-                                <strong>Tools:</strong> Android Studio, Kotlin, Java, Coroutines, socket data trans- fer, API REST consumption, GitLab, Jenkins.
-                                </li>
-                                <li>
-                               Currently collaborating in the implementation of automated deployments of data pipelines using CI/CD, enabling faster and more portable deployments.
-                                </li>
-                            </ul>
-
-                            <article class="article-item" id="article-template">
-                                <h1 class="subheader">Research Assistant</h1>
-                                <span class="date">
-                                   <strong>August 2022 - Novemeber 2022</strong> 
-                                </span>
-        
-                                <ul class="experience-li">
-                                    <li>
-                                    Characterizing the physical properties in noncollinear antiferromagnets for spintronics and straintronics devices.
-                                    </li>
-                                    <li>
-                                    <strong>Projects:</strong> Modelling several crystalline compounds, and calculation of their physical transport properties.
-                                    </li>
-                                    <li>
-                                    <strong>Tools:</strong> Vienna Abinitio Simulation Package (VASP), Wannier90, VASPKIT, p4vasp, Python.
-                                    </li>
-                                </ul>
-                                
-        
-
-                            <div class="clearfix"></div>
-
-                        </article>
-                    </div>
-                </section>
-
-                <div class="clearfix"></div>
-            </div>
-        </div>
-
-        <div id="contact" class="content-section" style="display: none;">
-            <div class="center">
-                <section id="content">
-                    <h1 class="subheader">Contact Me</h1>
-
-                    <form class="mid-form">
-                        <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" name="name"/>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="email">E-mail</label>
-                            <input type="text" name="email"/>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="message">Your Message</label>
-                            <textarea name="message"></textarea>
-                        </div>
-
-                        <div class="clearfix"></div>
-
-                        <input type="submit" value="submit" class="btn btn-success"/>
-                    </form>
-
-                </section>
-
-                <div class="clearfix"></div>
-            </div>
-        </div>
-
-        <footer id="footer">
-            <divc class="center">
-                <p>
-                    &copy; Daniel Torres
-                </p>
-            </divc>
-        </footer>
-
-        <script>
-            function showSection(sectionId) {
-                // Hide all content sections
-                const sections = document.querySelectorAll('.content-section');
-                sections.forEach(section => section.style.display = 'none');
-                
-                // Show the selected section
-                const selectedSection = document.getElementById(sectionId);
-                if (selectedSection) {
-                    selectedSection.style.display = 'block';
-                }
-                
-                // Hide the photo and adjust header height
-                document.getElementById('photo').style.display = 'none';
-                document.getElementById('header').style.height = 'auto';
-                
-                // Scroll to the section
-                selectedSection.scrollIntoView({ behavior: 'smooth' });
-            }
+                            </li>
+                            <li>
+                                <strong>Projects:</strong> Forms for data collection, utilities manager for restricted devices such as POS devices, migrations, and FinTech applications for clients such as Redeban - Colombia, TCC, Bancolombia, and Acueducto Metropolitano de Bucaramanga.
             
-            function showHome() {
-                // Hide all content sections
-                const sections = document.querySelectorAll('.content-section');
-                sections.forEach(section => section.style.display = 'none');
-                
-                // Show the photo and reset header height
-                document.getElementById('photo').style.display = 'block';
-                document.getElementById('header').style.height = '100vh';
-                
-                // Scroll to top
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-            }
-        </script>
+                            </li>
+                            <li>
+                                <strong>Tools:</strong> Android Studio, Kotlin, Java, Coroutines, web socket, REST, GitLab, Jenkins.
+                            </li>
+                        </ul>
+                    </article>
 
-    </body>
+                    <article class="article-item" id="article-template">
+                        <h1 class="subheader">Research Assistant at Universidad Industrial de Santander, Bucaramanga,
+                            Colombia</h1>
+                        <span class="date">
+                            <strong>August 2022 - Novemeber 2022</strong>
+                        </span>
+
+                        <ul class="experience-li">
+                            <li>
+                                Characterizing the physical properties in noncollinear antiferromagnets for spintronics and straintronics devices with applications to quantum computing.
+                            </li>
+                            <li>
+                                <strong>Projects:</strong> Modelling several crystalline compounds, and calculation of their electronic transport properties.
+                            </li>
+                            <li>
+                                <strong>Tools:</strong> Vienna Abinitio Simulation Package (VASP), Quantum ESPRESSO, Wannier90, VASPKIT, p4vasp, VESTA, Python, c++, Rust, Linux, MacOS.
+                            </li>
+                        </ul>
+
+
+
+                    <div class="clearfix"></div>
+
+
+                </div>
+            </section>
+
+            <div class="clearfix"></div>
+        </div>
+    </div>
+
+    <div id="contact" class="content-section" style="display: none;">
+        <div class="center">
+            <section id="content">
+                <h1 class="subheader">Contact Me</h1>
+
+                <form class="mid-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="text" name="email" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea name="message"></textarea>
+                    </div>
+
+                    <div class="clearfix"></div>
+
+                    <input type="submit" value="submit" class="btn btn-success" />
+                </form>
+
+            </section>
+
+            <div class="clearfix"></div>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <divc class="center">
+            <p>
+                &copy; Daniel Torres
+            </p>
+        </divc>
+    </footer>
+
+    <script>
+        function showSection(sectionId) {
+            // Hide all content sections
+            const sections = document.querySelectorAll('.content-section');
+            sections.forEach(section => section.style.display = 'none');
+
+            // Show the selected section
+            const selectedSection = document.getElementById(sectionId);
+            if (selectedSection) {
+                selectedSection.style.display = 'block';
+            }
+
+            // Hide the photo and adjust header height
+            document.getElementById('photo').style.display = 'none';
+            document.getElementById('header').style.height = 'auto';
+
+            // Scroll to the section
+            selectedSection.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function showHome() {
+            // Hide all content sections
+            const sections = document.querySelectorAll('.content-section');
+            sections.forEach(section => section.style.display = 'none');
+
+            // Show the photo and reset header height
+            document.getElementById('photo').style.display = 'block';
+            document.getElementById('header').style.height = '100vh';
+
+            // Scroll to top
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+
+</body>
+
 </html>
